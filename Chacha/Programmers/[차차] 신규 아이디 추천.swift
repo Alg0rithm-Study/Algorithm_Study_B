@@ -25,8 +25,13 @@ func solution(_ new_id:String) -> String {
     
     newId = newId.isEmpty ? "a" : newId
     
-    newId = newId.count > 15 ? String(newId.prefix(15)) : newId
-    newId = newId.trimmingCharacters(in: ["."])
+    if newId.count > 15 {
+        newId = String(newId.prefix(15))
+        if newId.last == "." {
+            newId.removeLast()
+        }
+    }
+    
     
     while newId.count < 3 {
         newId.append(newId.last!)
