@@ -14,5 +14,6 @@ func solution(_ numbers:[Int]) -> [Int] {
 			answer.append(sum)
         }
     }
+    
     return Array(Set(answer)).sorted()
 }

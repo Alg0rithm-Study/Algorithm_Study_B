@@ -17,6 +17,33 @@ func getDistance(of handPosition: HandPosition, and otherHandPosition: HandPosit
     return abs(handPosition.x - otherHandPosition.x) + abs(handPosition.y - otherHandPosition.y)
 }
 
+func calculateAndNavigate(
+    currentLeft: inout HandPosition,
+    currentRight: inout HandPosition,
+    handPosition: HandPosition,
+    hand: String,
+    answer: inout String
+) {
+    let leftDistance = getDistance(of: currentLeft, and: handPosition)
+    let rightDistance = getDistance(of: currentRight, and: handPosition)
+    
+    if leftDistance == rightDistance {
+        if hand == "right" {
+            answer += "R"
+            currentRight = handPosition
+        } else {
+            answer += "L"
+            currentLeft = handPosition
+        }
+    } else if leftDistance < rightDistance {
+        answer += "L"
+        currentLeft = handPosition
+    } else {
+        answer += "R"
+        currentRight = handPosition
+    }
+}
+
 func solution(_ numbers:[Int], _ hand:String) -> String {
     var answer = ""
     let coordinates: [Int: HandPosition] = [1: HandPosition(hand: .left, x: 0, y: 0),
@@ -36,6 +63,7 @@ func solution(_ numbers:[Int], _ hand:String) -> String {
         guard let handPosition = coordinates[number] else {
             continue
         }
+        
         switch handPosition.hand {
         case .right:
             answer += "R"
@@ -44,24 +72,7 @@ func solution(_ numbers:[Int], _ hand:String) -> String {
             answer += "L"
             currentLeft = handPosition
         case .neutral:
-            let leftDistance = getDistance(of: currentLeft, and: handPosition)
-            let rightDistance = getDistance(of: currentRight, and: handPosition)
-            
-            if leftDistance == rightDistance {
-                if hand == "right" {
-                    answer += "R"
-                    currentRight = handPosition
-                } else {
-                    answer += "L"
-                    currentLeft = handPosition
-                }
-            } else if leftDistance < rightDistance {
-                answer += "L"
-                currentLeft = handPosition
-            } else {
-                answer += "R"
-                currentRight = handPosition
-            }
+            calculateAndNavigate(currentLeft: &currentLeft, currentRight: &currentRight, handPosition: handPosition, hand: hand, answer: &answer)
         }
     }
     

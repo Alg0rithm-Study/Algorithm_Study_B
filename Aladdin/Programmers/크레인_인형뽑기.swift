@@ -11,11 +11,13 @@ func solution(_ board:[[Int]], _ moves:[Int]) -> Int {
     
     for move in moves {
         let col = move - 1
+        
         for row in 0..<board.count {
             let number = board[row][col]
             guard number != 0 else {
                 continue
             }
+            
             board[row][col] = 0
             if stack.last == number {
                 stack.removeLast()
