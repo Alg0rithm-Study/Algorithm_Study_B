@@ -17,8 +17,8 @@ func solution(_ board:[[Int]], _ moves:[Int]) -> Int {
             guard number != 0 else {
                 continue
             }
-            
             board[row][col] = 0
+            
             if stack.last == number {
                 stack.removeLast()
                 answer += 2

@@ -6,10 +6,10 @@ import Foundation
 extension String {
     func padLeft( totalWidth: Int,byString:String) -> String {
         let toPad = totalWidth - self.count
+        
         if toPad < 1 {
             return self
         }
-        
         return "".padding(toLength: toPad, withPad: byString, startingAt: 0) + self
     }
 }
@@ -21,7 +21,8 @@ extension Int {
 }
 
 func convertToBinaryArray(from number: Int, paddingWidth: Int) -> [Character] {
-    return number.binaryString
+    return number
+        .binaryString
         .padLeft(totalWidth: paddingWidth, byString: "0")
         .map { $0 }
 }
