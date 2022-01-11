@@ -1,44 +1,70 @@
-
+// 1. 손가락, 좌표 를 dictionary 로 매핑 해놓고
+// 2. 주어진 numbers 순서대로 접근해서 좌표간의 거리 계산해서, 다음 손가락이 어디로 갈지 저장
 import Foundation
 
-typealias Position = [Int, Int]
+struct HandPosition {
+    enum Hand {
+        case right
+        case left
+        case neutral
+    }
+    let hand: Hand
+    let x: Int
+    let y: Int
+}
 
-func getDistance(of )
+func getDistance(of handPosition: HandPosition, and otherHandPosition: HandPosition) -> Int {
+    return abs(handPosition.x - otherHandPosition.x) + abs(handPosition.y - otherHandPosition.y)
+}
 
 func solution(_ numbers:[Int], _ hand:String) -> String {
-    
     var answer = ""
-    let grid = [[1, 2, 3],
-            [4, 5, 6],
-            [7, 8, 9],
-            ['*', 0, '#']]
-    // coordination map
-    // [ Hand data, [x,y] ]
-    let coordinates = {1: ['L', Position(0, 0)],
-              2: ['N', [0,1]],
-              3: ['R', [0,2]],
-              4: ['L', [1,0]],
-              5: ['N', [1,1]],
-              6: ['R', [1,2]],
-              7: ['L', [2,0]],
-              8: ['N', [2,1]],
-              9: ['R', [2,2]],
-              0: ['N', [3,1]] }
-    let left = [3, 0]
-    let right = [3, 2]
+    let coordinates: [Int: HandPosition] = [1: HandPosition(hand: .left, x: 0, y: 0),
+                                            2: HandPosition(hand: .neutral, x: 0, y: 1),
+                                            3: HandPosition(hand: .right, x: 0, y: 2),
+                                            4: HandPosition(hand: .left, x: 1, y: 0),
+                                            5: HandPosition(hand: .neutral, x: 1, y: 1),
+                                            6: HandPosition(hand: .right, x: 1, y: 2),
+                                            7: HandPosition(hand: .left, x: 2, y: 0),
+                                            8: HandPosition(hand: .neutral, x: 2, y: 1),
+                                            9: HandPosition(hand: .right, x: 2, y: 2),
+                                            0: HandPosition(hand: .neutral, x: 3, y: 1)]
+    var currentLeft = HandPosition(hand: .left, x: 3, y: 0)
+    var currentRight = HandPosition(hand: .right, x: 3, y: 2)
     
     for number in numbers {
-        let (hand, position) = coordinates[number]
-        switch hand {
-        case "R":
+        guard let handPosition = coordinates[number] else {
+            continue
+        }
+        switch handPosition.hand {
+        case .right:
             answer += "R"
-            right = position
-        case "L":
+            currentRight = handPosition
+        case .left:
             answer += "L"
-            left = position
-        case "N":
-            let leftDistance = abs(
+            currentLeft = handPosition
+        case .neutral:
+            let leftDistance = getDistance(of: currentLeft, and: handPosition)
+            let rightDistance = getDistance(of: currentRight, and: handPosition)
+            
+            if leftDistance == rightDistance {
+                if hand == "right" {
+                    answer += "R"
+                    currentRight = handPosition
+                } else {
+                    answer += "L"
+                    currentLeft = handPosition
+                }
+            } else if leftDistance < rightDistance {
+                answer += "L"
+                currentLeft = handPosition
+            } else {
+                answer += "R"
+                currentRight = handPosition
+            }
         }
     }
     
+    return answer
 }
+
