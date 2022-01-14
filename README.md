@@ -21,6 +21,43 @@
 
 ## 🤓 커리큘럼 
 
+### 난이도 별 풀이 문제 수 
+
+|난이도|Programmers|LeetCode|
+|:---:|:---:|:---:|
+|<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|9|0|
+|<img src= "https://img.shields.io/badge/-Lv.%202-orange">|0|0|
+|<img src= "https://img.shields.io/badge/-Lv.%203-ff69b4">|0|0|      
+
+<details>
+<summary> 1주차(1/12) </summary>
+<div markdown="1">
+
+|난이도|문제|
+|--|--|
+|<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|[두 개 뽑아서 더하기](https://programmers.co.kr/learn/courses/30/lessons/68644?language=swift)|
+|<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|[크레인 인형뽑기 게임](https://programmers.co.kr/learn/courses/30/lessons/64061?language=swift)|
+|<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|[키패드 누르기](https://programmers.co.kr/learn/courses/30/lessons/67256?language=swift)|
+|<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|[비밀지도](https://programmers.co.kr/learn/courses/30/lessons/17681?language=swift)|    
+|<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|[없는 숫자 더하기](https://programmers.co.kr/learn/courses/30/lessons/86051?language=swift)|
+    
+</div>
+</details>
+
+<details>
+<summary> 2주차(1/19) </summary>
+<div markdown="1">
+
+|난이도|문제|
+|--|--|
+|<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|[신규 아이디 추천](https://programmers.co.kr/learn/courses/30/lessons/72410?language=swift)|
+|<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|[숫자 문자열과 영단어](https://programmers.co.kr/learn/courses/30/lessons/81301?language=swift)|
+|<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|[실패율](https://programmers.co.kr/learn/courses/30/lessons/42889?language=swift)|
+|<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|[다트게임](https://programmers.co.kr/learn/courses/30/lessons/17682?language=swift)|    
+    
+</div>
+</details>
+
 ## 🤓 커밋 컨벤션
 
 - `programmers` : programmers 풀이
