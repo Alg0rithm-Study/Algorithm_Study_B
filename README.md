@@ -23,11 +23,11 @@
 
 ### 난이도 별 풀이 문제 수 
 
-|난이도|Programmers|LeetCode|
-|:---:|:---:|:---:|
-|<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|9|0|
-|<img src= "https://img.shields.io/badge/-Lv.%202-orange">|0|0|
-|<img src= "https://img.shields.io/badge/-Lv.%203-ff69b4">|0|0|      
+|난이도|Programmers|난이도|LeetCode|
+|:---:|:---:|:---:|:---:|
+|<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|9|<img src= "https://img.shields.io/badge/-Easy-success">|0|
+|<img src= "https://img.shields.io/badge/-Lv.%202-orange">|0|<img src= "https://img.shields.io/badge/-Medium-orange">|0|
+|<img src= "https://img.shields.io/badge/-Lv.%203-ff69b4">|0|<img src= "https://img.shields.io/badge/-Hard-red">|0|      
 
 <details>
 <summary> 1주차(1/12) </summary>
@@ -54,6 +54,20 @@
 |<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|[숫자 문자열과 영단어](https://programmers.co.kr/learn/courses/30/lessons/81301?language=swift)|
 |<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|[실패율](https://programmers.co.kr/learn/courses/30/lessons/42889?language=swift)|
 |<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|[다트게임](https://programmers.co.kr/learn/courses/30/lessons/17682?language=swift)|    
+    
+</div>
+</details>
+
+<details>
+<summary> 3주차(1/26) </summary>
+<div markdown="1">
+
+|난이도|문제|
+|--|--|
+|<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|[신고 결과 받기](https://programmers.co.kr/learn/courses/30/lessons/92334?language=swift)|
+|<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|[K진수에서 소수 개수 구하기](https://programmers.co.kr/learn/courses/30/lessons/92335?language=swift)|
+|<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|[주차 요금 계산](https://programmers.co.kr/learn/courses/30/lessons/92341?language=swift)|
+|<img src= "https://img.shields.io/badge/-Easy-success">|[Water Bottles](https://leetcode.com/problems/water-bottles/)|    
     
 </div>
 </details>
