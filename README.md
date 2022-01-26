@@ -25,7 +25,7 @@
 
 |난이도|Programmers|난이도|LeetCode|
 |:---:|:---:|:---:|:---:|
-|<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|9|<img src= "https://img.shields.io/badge/-Easy-success">|0|
+|<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|12|<img src= "https://img.shields.io/badge/-Easy-success">|1|
 |<img src= "https://img.shields.io/badge/-Lv.%202-orange">|0|<img src= "https://img.shields.io/badge/-Medium-orange">|0|
 |<img src= "https://img.shields.io/badge/-Lv.%203-ff69b4">|0|<img src= "https://img.shields.io/badge/-Hard-red">|0|      
 
@@ -68,6 +68,22 @@
 |<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|[K진수에서 소수 개수 구하기](https://programmers.co.kr/learn/courses/30/lessons/92335?language=swift)|
 |<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|[주차 요금 계산](https://programmers.co.kr/learn/courses/30/lessons/92341?language=swift)|
 |<img src= "https://img.shields.io/badge/-Easy-success">|[Water Bottles](https://leetcode.com/problems/water-bottles/)|    
+    
+</div>
+</details>
+
+<details>
+<summary> 4주차(2/9) </summary>
+<div markdown="1">
+
+- DFS/BFS 문제 풀이     
+    
+|난이도|문제|
+|--|--|
+|<img src= "https://img.shields.io/badge/-Easy-success">|[Island Perimeter](https://leetcode.com/problems/island-perimeter/)|
+|<img src= "https://img.shields.io/badge/-Easy-success">|[Flood Fill](https://leetcode.com/problems/flood-fill/)|
+|<img src= "https://img.shields.io/badge/-Easy-success">|[Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/)|
+|Gold V|[치즈](https://www.acmicpc.net/problem/2636)|    
     
 </div>
 </details>
