@@ -92,6 +92,7 @@
 
 - `programmers` : programmers 풀이
 - `leetcode` : leetcode 풀이
+- `boj` : Baekjoon Online Judge 풀이
 - `ds` : 자료구조를 학습하고 정리한 내용
 - `algo` : 알고리즘을 학습하고 정리한 내용
 - `chore` : 폴더/파일 구조 변경
