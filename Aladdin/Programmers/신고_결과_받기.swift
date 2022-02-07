@@ -14,7 +14,6 @@ func solution(_ id_list:[String], _ report:[String], _ k:Int) -> [Int] {
         id_index[id] = index
     }
     
-//    report.forEach { data in
     for data in report {
         let (reporter, reported) = split(from: data)
         
@@ -25,10 +24,8 @@ func solution(_ id_list:[String], _ report:[String], _ k:Int) -> [Int] {
         }
     }
     
-//    reported_reporters.forEach { (_, reporters) in
     for (_, reporters) in reported_reporters {
         if reporters.count >= k {
-//            reporters.forEach { id in
             for id in reporters {
                 answer[id_index[id]!] += 1
             }
