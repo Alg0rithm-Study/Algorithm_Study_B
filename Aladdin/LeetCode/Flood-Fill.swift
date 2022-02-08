@@ -1,3 +1,9 @@
+/**
+bfs 풀이
+원래의 color 저장 해뒀다가
+탐색하면서 같은 색 만나면 새로운 색으로 바꿔주고 큐에 넣는다
+*/
+
 class Solution {
     func floodFill(_ image: [[Int]], _ sr: Int, _ sc: Int, _ newColor: Int) -> [[Int]] {
         let xBorder = image.count
