@@ -99,7 +99,7 @@
     
 |난이도|문제|
 |--|--|
-|<img src= "https://img.shields.io/badge/-Easy-success">|[Reverse String](https://leetcode.com/problems/reverse-string/https://leetcode.com/problems/reverse-string/ )|
+|<img src= "https://img.shields.io/badge/-Easy-success">|[Reverse String](https://leetcode.com/problems/reverse-string/)|
 |<img src= "https://img.shields.io/badge/-Medium-orange">|[Container With Most Water](https://leetcode.com/problems/container-with-most-water/)|
 |Gold 5|[용액](https://www.acmicpc.net/problem/2467)|    
 |<img src= "https://img.shields.io/badge/-Medium-orange">|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|
