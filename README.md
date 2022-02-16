@@ -28,8 +28,8 @@
 
 |난이도|Programmers|난이도|LeetCode|
 |:---:|:---:|:---:|:---:|
-|<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|12|<img src= "https://img.shields.io/badge/-Easy-success">|4|
-|<img src= "https://img.shields.io/badge/-Lv.%202-orange">|0|<img src= "https://img.shields.io/badge/-Medium-orange">|0|
+|<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|10|<img src= "https://img.shields.io/badge/-Easy-success">|5|
+|<img src= "https://img.shields.io/badge/-Lv.%202-orange">|2|<img src= "https://img.shields.io/badge/-Medium-orange">|2|
 |<img src= "https://img.shields.io/badge/-Lv.%203-ff69b4">|0|<img src= "https://img.shields.io/badge/-Hard-red">|0|      
 
 <details>
@@ -68,8 +68,8 @@
 |난이도|문제|
 |--|--|
 |<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|[신고 결과 받기](https://programmers.co.kr/learn/courses/30/lessons/92334?language=swift)|
-|<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|[K진수에서 소수 개수 구하기](https://programmers.co.kr/learn/courses/30/lessons/92335?language=swift)|
-|<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|[주차 요금 계산](https://programmers.co.kr/learn/courses/30/lessons/92341?language=swift)|
+|<img src= "https://img.shields.io/badge/-Lv.%202-orange">|[K진수에서 소수 개수 구하기](https://programmers.co.kr/learn/courses/30/lessons/92335?language=swift)|
+|<img src= "https://img.shields.io/badge/-Lv.%202-orange">|[주차 요금 계산](https://programmers.co.kr/learn/courses/30/lessons/92341?language=swift)|
 |<img src= "https://img.shields.io/badge/-Easy-success">|[Water Bottles](https://leetcode.com/problems/water-bottles/)|    
     
 </div>
@@ -105,7 +105,21 @@
 |<img src= "https://img.shields.io/badge/-Medium-orange">|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|
 |Gold 4|[회전 초밥](https://www.acmicpc.net/problem/15961)|        
     
+</div>
+</details>
+
+<details>
+<summary> 6주차(2/23) </summary>
+<div markdown="1">
+
+- Priority Queue 문제 풀이     
     
+|난이도|문제|
+|--|--|
+|<img src= "https://img.shields.io/badge/-Lv.%203-ff69b4">|[디스크 컨트롤러](https://programmers.co.kr/learn/courses/30/lessons/42627?language=swift)|
+|<img src= "https://img.shields.io/badge/-Lv.%203-ff69b4">|[이중 우선순위 큐](https://programmers.co.kr/learn/courses/30/lessons/42628?language=swift)|
+|Gold 4|[회전 초밥](https://www.acmicpc.net/problem/15961)|  
+|Gold 5|[최소 회의실 개수](https://www.acmicpc.net/problem/19598)|      
     
 </div>
 </details>
