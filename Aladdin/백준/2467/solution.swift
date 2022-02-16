@@ -20,7 +20,7 @@ while left < right {
     let sum = leftNumber + rightNumber
     let absoluteSum = abs(sum)
     
-    if absoluteSum < total {
+    if absoluteSum <= total {
         leftAnswer = numbers[left]
         rightAnswer = numbers[right]
         total = absoluteSum
