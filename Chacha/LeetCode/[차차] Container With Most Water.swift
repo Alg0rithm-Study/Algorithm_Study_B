@@ -15,9 +15,9 @@ class Solution {
             let leftHeight = height[left]
             let rightHeight = height[right]
             let curWater = min(leftHeight, rightHeight) * (right - left)
-            
-            if water > maxWater {
-                maxWater = w * h
+ 
+            if curWater > maxWater {
+                maxWater = curWater
             } else {
                 if leftHeight > rightHeight {
                     right -= 1
