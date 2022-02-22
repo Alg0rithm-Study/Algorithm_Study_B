@@ -25,14 +25,7 @@ func minify(tasks: inout [task], newTask: task) {
 
 
 func solution(_ jobs:[[Int]]) -> Int {
-    let jobs = jobs.sorted { (lhs, rhs) -> Bool in
-        
-        if lhs[0] == rhs[0]{
-            return lhs[1]<rhs[1]
-        }
-        
-        return lhs[0] < rhs[0]
-    }
+    let jobs = jobs.sorted { $0[0] == $1[0] ? $0[1] < $1[1] : $0[0] < $0[0] }
     
     var queue: [task] = []
     var count = 0, lastTime = -1, currentTime = 0, total = 0
@@ -59,4 +52,3 @@ func solution(_ jobs:[[Int]]) -> Int {
     
     return total / jobs.count
 }
-
