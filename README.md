@@ -30,7 +30,7 @@
 |:---:|:---:|:---:|:---:|
 |<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|10|<img src= "https://img.shields.io/badge/-Easy-success">|5|
 |<img src= "https://img.shields.io/badge/-Lv.%202-orange">|2|<img src= "https://img.shields.io/badge/-Medium-orange">|2|
-|<img src= "https://img.shields.io/badge/-Lv.%203-ff69b4">|0|<img src= "https://img.shields.io/badge/-Hard-red">|0|      
+|<img src= "https://img.shields.io/badge/-Lv.%203-ff69b4">|2|<img src= "https://img.shields.io/badge/-Hard-red">|0|      
 
 <details>
 <summary> 1주차(1/12) </summary>
@@ -120,6 +120,22 @@
 |<img src= "https://img.shields.io/badge/-Lv.%203-ff69b4">|[이중 우선순위 큐](https://programmers.co.kr/learn/courses/30/lessons/42628?language=swift)|
 |Gold 4|[회전 초밥](https://www.acmicpc.net/problem/15961)|  
 |Gold 5|[최소 회의실 개수](https://www.acmicpc.net/problem/19598)|      
+    
+</div>
+</details>
+
+<details>
+<summary> 7주차(3/2) </summary>
+<div markdown="1">
+
+- Greedy 문제 풀이     
+    
+|난이도|문제|
+|--|--|
+|<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|[체육복](https://programmers.co.kr/learn/courses/30/lessons/42862?language=swift)|
+|<img src= "https://img.shields.io/badge/-Lv.%202-orange">|[조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860?language=swift)|
+|<img src= "https://img.shields.io/badge/-Lv.%202-orange">|[큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883?language=swift)|  
+|<img src= "https://img.shields.io/badge/-Lv.%203-ff69b4">|[섬 연결하기](https://programmers.co.kr/learn/courses/30/lessons/42861?language=swift)|      
     
 </div>
 </details>
