@@ -39,3 +39,28 @@ func solution(_ n:Int, _ lost:[Int], _ reserve:[Int]) -> Int {
     
     return listen
 }
+
+
+// 개선해본 코드
+
+func solution(_ n:Int, _ lost:[Int], _ reserve:[Int]) -> Int {
+    
+    let filterdLost = lost.filter { reserve.contains($0) == false }.sorted()
+    var filterdReserve = reserve.filter { lost.contains($0) == false }.sorted()
+    var listen = n - filterdLost.count
+    
+    for lose in filterdLost {
+        let front = lose - 1
+        let back = lose + 1
+
+        if let index = filterdReserve.firstIndex(of: front) {
+            filterdReserve.remove(at: index)
+            listen += 1
+        } else if let index = filterdReserve.firstIndex(of: back) {
+            filterdReserve.remove(at: index)
+            listen += 1
+        }
+    }
+    
+    return listen
+}
