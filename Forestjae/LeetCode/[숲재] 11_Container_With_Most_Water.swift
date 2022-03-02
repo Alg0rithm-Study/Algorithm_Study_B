@@ -12,7 +12,6 @@ class Solution {
         func area(leftIndex: Int, rightIndex: Int) -> Int {
             return min(height[leftIndex], height[rightIndex]) * (rightIndex - leftIndex)
         }
-
         var left = 0
         var right = height.count - 1
         var tempArea = 0
