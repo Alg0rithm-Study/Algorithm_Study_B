@@ -28,9 +28,9 @@
 
 |난이도|Programmers|난이도|LeetCode|
 |:---:|:---:|:---:|:---:|
-|<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|10|<img src= "https://img.shields.io/badge/-Easy-success">|5|
-|<img src= "https://img.shields.io/badge/-Lv.%202-orange">|2|<img src= "https://img.shields.io/badge/-Medium-orange">|2|
-|<img src= "https://img.shields.io/badge/-Lv.%203-ff69b4">|2|<img src= "https://img.shields.io/badge/-Hard-red">|0|      
+|<img src= "https://img.shields.io/badge/-Lv.%201-brightgreen">|11|<img src= "https://img.shields.io/badge/-Easy-success">|5|
+|<img src= "https://img.shields.io/badge/-Lv.%202-orange">|4|<img src= "https://img.shields.io/badge/-Medium-orange">|2|
+|<img src= "https://img.shields.io/badge/-Lv.%203-ff69b4">|3|<img src= "https://img.shields.io/badge/-Hard-red">|0|      
 
 <details>
 <summary> 1주차(1/12) </summary>
@@ -136,6 +136,22 @@
 |<img src= "https://img.shields.io/badge/-Lv.%202-orange">|[조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860?language=swift)|
 |<img src= "https://img.shields.io/badge/-Lv.%202-orange">|[큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883?language=swift)|  
 |<img src= "https://img.shields.io/badge/-Lv.%203-ff69b4">|[섬 연결하기](https://programmers.co.kr/learn/courses/30/lessons/42861?language=swift)|      
+    
+</div>
+</details>
+
+<details>
+<summary> 8주차(3/9) </summary>
+<div markdown="1">
+
+- Binary Search 문제 풀이     
+    
+|난이도|문제|
+|--|--|
+|Silver 3|[나무 자르기](https://www.acmicpc.net/problem/2805)|
+|Gold 5|[공유기 설치](https://www.acmicpc.net/problem/2110)|
+|<img src= "https://img.shields.io/badge/-Medium-orange">|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|  
+|<img src= "https://img.shields.io/badge/-Lv.%202-orange">|[순위 검색](https://programmers.co.kr/learn/courses/30/lessons/72412?language=swift)|      
     
 </div>
 </details>
