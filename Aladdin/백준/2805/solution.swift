@@ -1,22 +1,36 @@
-N, M = list(map(int, input().split()))
-trees = list(map(int, input().split()))
+import Foundation
 
-left, right = 0, max(trees)
-answer = 0
+let NM = readLine()!.split(separator: " ").compactMap { Int($0) }
+let N = NM[0]
+let M = NM[1]
+let trees = readLine()!.split(separator: " ").compactMap { Int($0) }
 
-def cut(height):
-    total = 0
-    for t in trees:
-        if t > height:
-            total += t - height
+var left = 0, right = trees.max()!
+var answer = 0
+
+func cut(trees: [Int], height: Int) -> Int {
+    var total = 0
+    
+    for tree in trees {
+        if tree > height {
+            total += tree - height
+        }
+    }
     return total
-answer = 0
-while left <= right:
-    height = left + (right - left) // 2
-    cutDif = cut(height)
-    if cutDif >= M:
+}
+
+while left <= right {
+    let height = left + (right - left) / 2
+    let cutDifference = cut(trees: trees, height: height)
+    
+    if cutDifference >= M {
         answer = max(height, answer)
         left = height + 1
-    else:
+    } else {
         right = height - 1
+    }
+}
+
 print(answer)
+
+
