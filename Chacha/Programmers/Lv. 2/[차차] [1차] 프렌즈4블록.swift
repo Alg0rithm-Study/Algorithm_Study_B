@@ -8,18 +8,16 @@
 
 func solution(_ m:Int, _ n:Int, _ board:[String]) -> Int {
     var board = board.map { Array($0) }
-    var removedCount = 0
     
     while true {
         let targetBlocks = findBlock(board)
         if targetBlocks.isEmpty {
             break
         }
-        removedCount += targetBlocks.count
         removeBlock(&board, targetBlocks)    
     }
     
-    return removedCount
+    return board.map { $0.filter { $0 == "-"}.count }.reduce(0,+)
 }
 
 func transpose(_ board: inout [[Character]]) {
@@ -36,6 +34,7 @@ func transpose(_ board: inout [[Character]]) {
 
 func moveBlock(_ board: inout [[Character]]) {    
     transpose(&board)    
+    
     let removedCounts = board.map { $0.filter { $0 == "-" }.count }
     board = board.map { $0.filter { $0 != "-" }}
     
