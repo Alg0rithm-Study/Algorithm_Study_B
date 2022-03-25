@@ -1,0 +1,59 @@
+import Foundation
+
+func solution(_ info:[String], _ query:[String]) -> [Int] {
+
+    var store: [String: [Int]] = [:]
+
+    for i in info {
+        let information = i.components(separatedBy: " ")
+        let languages = [information[0], "-"]
+        let jobs = [information[1], "-"]
+        let careers = [information[2], "-"]
+        let soulFoods = [information[3], "-"]
+        let score = Int(information[4])!
+
+        for language in languages {
+            for job in jobs {
+                for career in careers {
+                    for food in soulFoods {
+                        let key = "\(language) \(job) \(career) \(food)"
+                        if store.keys.contains(key) {
+                            store[key]?.append(score) } else { store[key] = [score] }
+                    }
+                }
+            }
+        }
+    }
+
+    store.forEach { store[$0.key] = $0.value.sorted(by: { $0 < $1 }) }
+
+    var answer = [Int]()
+    query.forEach {
+        let arr = $0.replacingOccurrences(of: "and ", with: "").components(separatedBy: " ")
+        let language = arr[0]
+        let job = arr[1]
+        let career = arr[2]
+        let food = arr[3]
+        let score = Int(arr[4])!
+
+        let key = "\(language) \(job) \(career) \(food)"
+
+        if let target = store[key] {
+            var left = 0
+            var right = target.count
+            while left < right {
+                let mid = (left + right) / 2
+
+                if target[mid] >= score {
+                    right = mid
+                } else {
+                    left = mid + 1
+                }
+            }
+            answer.append(target.count - left)
+        } else {
+            answer.append(0)
+        }
+    }
+    return answer
+}
