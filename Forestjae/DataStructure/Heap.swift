@@ -36,7 +36,7 @@ struct Heap<T> {
 
 // 최대힙 간략 구현
 
-func maxHeap(_ heap: inout [Int], _ number: Int) {
+func maxHeap(_ heap: inout [(target: Int, not: Int)], _ number: (Int, Int) {
     var first = 0
     var last = heap.count - 1
 
@@ -48,7 +48,7 @@ func maxHeap(_ heap: inout [Int], _ number: Int) {
     while first <= last {
         let middle = (first + last) / 2
 
-        if heap[middle] < number {
+        if heap[middle].target < number {
             first = middle + 1
         } else {
             last = middle - 1

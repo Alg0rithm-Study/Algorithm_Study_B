@@ -21,7 +21,7 @@ func isValid(target: Int) -> Bool {
             current = houses[index]
         }
     }
-    let result = count >= modemCount ? true : false
+    let result = count >= modemCount
     return result
 }
 
