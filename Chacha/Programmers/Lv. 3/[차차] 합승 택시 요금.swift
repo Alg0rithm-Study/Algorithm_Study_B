@@ -1,7 +1,7 @@
 import Foundation
 
 func solution(_ n:Int, _ s:Int, _ a:Int, _ b:Int, _ fares:[[Int]]) -> Int {
-    let maxValue = 200 * 100000 + 1
+    let maxValue = 200 * 100000
     var pathCosts = Array(repeating: Array(repeating: maxValue, count: n), count: n)    
     
     for fare in fares {
